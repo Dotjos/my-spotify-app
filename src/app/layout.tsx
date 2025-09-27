@@ -1,3 +1,6 @@
+import "./globals.css";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 
@@ -20,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={quicksand.className}>
-      <body className="">{children}</body>
+      <body className="bg-dark px-3 py-5">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
