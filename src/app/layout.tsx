@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={quicksand.className}>
-      <body className="bg-dark px-3 py-5">
+      <body className="bg-dark flex flex-col text-white gap-5 items-center px-3 py-5">
         <Navbar />
         {children}
         <Footer />
